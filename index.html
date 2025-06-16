@@ -86,8 +86,11 @@
       text-align: right;
     }
     .footer {
-      background-color: #005cab;
+      background-color: #004e7d;
       color: #fafafa;
+    }
+    .footerSocial {
+      color: #fafafa !important;
     }
     .column-wrapper {
     padding: 0 0 30px 0;
@@ -221,11 +224,19 @@
           background: #fafafa !important;
           color: #fafafa !important;
         }
+        h1,
         h2,
         h3 {
           color: #fafafa !important;
         }
-          h3.productPrice {
+        .headingLarge {
+          color: #fafafa !important;
+        }
+        .accent,
+        .link_accent {
+          color: #fafafa !important;
+        }
+        h3.productPrice {
           color: #fafafa; 
         }
         p {
@@ -236,6 +247,15 @@
         }
         .browser {
           color: #fafafa !important;
+        }
+        ol li::marker {
+          color: #fafafa !important;
+          font-weight: 700;
+        }
+        ol li {
+          color: #fafafa !important;
+          font-size: 14px;
+          margin-bottom: 16px;
         }
         hr {
           border: 1px solid #fafafa !important; 
@@ -301,18 +321,18 @@
         <tr>
           <td style="padding: 0;">
 
-            <!-- [if mso]>
-              <table width="600" align="right" style="border-spacing: 0; border-collapse: collapse;" role="presentation">
+            <!--[if mso]>
+              <table width="600" align="center" style="border-spacing: 0;" role="presentation">
                 <tr>
-                  <td width="600" valign="top" align="right" style="padding: 0; text-align: right;">
+                  <td width="600" valign="top" style="padding: 0;"
             <![endif]-->
 
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; text-align: right; margin: 0;" role="presentation">
 
               <tr>
-                <td >
+                <td class="online" style="font-family: Helvetica, Arial, sans-serif; color: #004E7D; background-color: #fafafa; padding: 10px 20px 10px 0; margin: 0;">
 
-                  <a class="browser" align="right" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; font-weight: 500; color: #004E7D !important; text-decoration: underline !important; text-align: right; float: right; padding: 10px 20px 10px 0; margin-bottom: 0;" href="##webversionurl##" target="_blank">
+                  <a class="browser" align="right" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #004E7D; text-decoration: underline !important; text-align: right; padding: 0; margin-bottom: 0;" href="##webversionurl##" target="_blank">
                     view online
                   </a>
 
@@ -383,7 +403,7 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h1 class="heading" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; line-height: 1; font-weight: 500; color: #00AEEF; margin: 0 !important; padding: 0; line-height: 1.1;">Updates to your <span class="headingLarge" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; color: #004E7D;">We Financial Card</span> Cardholder Agreement.</h1>
+                              <h1 class="heading" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; line-height: 1; font-weight: 500; color: #00AEEF; margin: 0 !important; padding: 0; line-height: 1.1;">Updates to your <span class="headingLarge" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; color: #004E7D;">We Financial<sup>&reg;</sup> Card</span> Cardholder Agreement.</h1>
                           </tr>
                         </table>
 
@@ -430,8 +450,8 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h2 class="greeting" style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.1; font-weight: 700; color: #004E7D; margin-bottom: 16px !important; padding: 0;">Dear: [ Name ]:</h2>
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin-bottom: 0 !important; padding: 0;">Please note the following upcoming changes to the We Financial Cardholder agreement for your <span style="font-weight: 700; color: #004E7D;">We Financial<sup>®</sup> Visa<sup>*</sup> Prepaid Card</span>, which will take effect on <span style="font-weight: 700; color: #004E7D;">August 1, 2025</span>.</p>
+                              <h2 class="greeting" style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; line-height: 1.1; font-weight: 700; color: #004E7D; margin-bottom: 16px !important; padding: 0;">Dear: ##First Name Format="Firstlettercapital" Default="Valued Customer"##:</h2>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin-bottom: 0 !important; padding: 0;">Please note the following upcoming changes to the We Financial<sup>&reg;</sup> Cardholder agreement for your <span class="accent" style="font-weight: 700; color: #004E7D;">We Financial<sup>&reg;</sup> Visa<sup>*</sup> Prepaid Card</span>, which will take effect on <span class="accent" style="font-weight: 700; color: #004E7D;">August 1, 2025</span>.</p>
                           </tr>
                         </table>
 
@@ -472,11 +492,11 @@
                         
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
-                            <td class="bodyList" style="padding: 0 24px 16px 24px;">
+                            <td class="bodyList" style="padding: 0 24px 16px 24px !important;">
                               <ol>
-                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0;"><span style="font-weight: 700; color: #004E7D;">Introducing Canada Deposit Insurance Corporation (CDIC) Services.</span> The We Financial Visa Prepaid Card is issued by Peoples Trust Company under licence from Visa. Funds loaded onto the card are held by the issuer Peoples Trust Company, a member institution of the CDIC, and are eligible for CDIC coverage. We Financial is not a CDIC member institution. Funds loaded onto the card are combined with eligible deposits held under Peoples Trust Company for up to $100,000 of deposit protection, per insured category, per depositor. For further information about CDIC deposit insurance, please consult CDIC's website <a href="https://www.cdic.ca" target="_blank">https://www.cdic.ca/</a></li>
+                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0;"><span class="accent" style="font-weight: 700; color: #004E7D;">Introducing Canada Deposit Insurance Corporation (CDIC) Services.</span> The We Financial<sup>&reg;</sup> Visa Prepaid Card is issued by Peoples Trust Company under licence from Visa. Funds loaded onto the card are held by the issuer Peoples Trust Company, a member institution of the CDIC, and are eligible for CDIC coverage. We Financial<sup>&reg;</sup> is not a CDIC member institution. Funds loaded onto the card are combined with eligible deposits held under Peoples Trust Company for up to $100,000 of deposit protection, per insured category, per depositor. For further information about CDIC deposit insurance, please consult CDIC's website <a class="link_accent" href="https://www.cdic.ca" target="_blank">https://www.cdic.ca/</a></li>
 
-                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 2.25; font-weight: 500; color: #2d2d2d; padding: 0; margin: 0;"><span style="font-weight: 700; color: #004E7D;">Changes to the Exception Limit.</span><br />
+                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 2.25; font-weight: 500; color: #2d2d2d; padding: 0; margin: 0;"><span class="accent" style="font-weight: 700; color: #004E7D;">Changes to the Exception Limit.</span><br />
                                   <table cellpadding="8px" class="exceptionLimit" style="background-color: rgba(0, 174, 239, 40%); border: 1px solid #004E7D; line-height: 1.4;">
                                     <tr>
                                       <th>Limits that are changing:</th>
@@ -520,7 +540,7 @@
                           </tr>
                           <tr>
                             <td style="text-align: left; padding: 0 28px 0 60px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;"><sup>*</sup>We reserve the right to permit these limits in limited circumstances and on a case by case basis upon validation by We Financial of the source of deposit funds that are in excess of the standard limit. Additional conditions may apply.</span></p>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;"><sup>*</sup>We reserve the right to permit these limits in limited circumstances and on a case by case basis upon validation by We Financial<sup>&reg;</sup> of the source of deposit funds that are in excess of the standard limit. Additional conditions may apply.</span></p>
                           </tr>
                           
                         </table>
@@ -556,11 +576,11 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">Visit <a href="https://ca.visaprepaidprocessing.com/content/PRC965/_Docs/Program.Terms.MainContent.pdf" target="_blank">Terms & Conditions</a> to find the full cardholder agreement and Frequently Asked Questions for details after August 1, 2025. If you have any further questions, please contact us at <a rel="noopener" target="_blank" href="tel:1-855-887-3946">1-855-887-3946</a>.</p>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">Visit <a class="link_accent" href="https://ca.visaprepaidprocessing.com/content/PRC965/_Docs/Program.Terms.MainContent.pdf" target="_blank">Terms & Conditions</a> to find the full cardholder agreement and <a class="link_accent" href="https://ca.visaprepaidprocessing.com/WeFinancial/Program/FAQ" target="_blank">Frequently Asked Questions</a> for details after August 1, 2025. If you have any further questions, please contact us at <a class="link_accent" rel="noopener" target="_blank" href="tel:1-855-887-3946">1-855-887-3946</a>.</p>
                               <p>There is no action needed from you. Your continued use of your card, after the changes come into effect will be taken as your acceptance of these changes.</p>
-                              <p>If you do not agree, you may rescind this agreement without cost, penalty or cancellation indemnity. If you choose to rescind this agreement, the Cancellation section of your Cardholder Agreement will apply. Call us at 1-855-887-3946 to initiate your cancellation no later than 30 days after the Amendment takes effect.</p>
+                              <p>If you do not agree, you may rescind this agreement without cost, penalty or cancellation indemnity. If you choose to rescind this agreement, the Cancellation section of your Cardholder Agreement will apply. Call us at <a class="link_accent" rel="noopener" target="_blank" href="tel:1-855-887-3946">1-855-887-3946</a> to initiate your cancellation no later than 30 days after the Amendment takes effect.</p>
                               <p>Sincerely,<br />
-                                We Financial Visa Prepaid</p>
+                                <strong>We Financial<sup>&reg;</sup> Visa Prepaid</strong></p>
                               <p class="footnote" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;">This card is issued by Peoples Trust Company pursuant to licence by Visa Int.<br />
                               <sup>*</sup>Visa Int./Peoples Trust Company, Licensed User.</p>
                           </tr>
@@ -627,7 +647,7 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h2 class="heading" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; line-height: 1; font-weight: 500; color: #00AEEF; margin: 0 !important; padding: 0; line-height: 1.1;">Modification de votre Contrat du titulaire de  <span class="headingLarge" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; color: #004E7D;">carte We Financial</span></h2>
+                              <h2 class="heading" style="font-family: Helvetica, Arial, sans-serif; font-size: 32px; line-height: 1; font-weight: 500; color: #00AEEF; margin: 0 !important; padding: 0; line-height: 1.1;">Modification de votre Contrat du titulaire de <span class="headingLarge" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; color: #004E7D;">carte We Financial<sup>&reg;</sup></span></h2>
                           </tr>
                         </table>
 
@@ -664,7 +684,7 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">                              Veuillez noter que les changements suivants seront apportés au Contrat du titulaire de carte We Financial concernant votre carte <span style="font-weight: 700; color: #004E7D;">prépayée Visa* We Financial<sup>MD</sup></span> et qu'ils entreront en vigueur le <span style="font-weight: 700; color: #004E7D;">1er Aout 2025.</span></p>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">Veuillez noter que les changements suivants seront apportés au Contrat du titulaire de carte We Financial concernant votre carte <span class="accent" style="font-weight: 700; color: #004E7D;">prépayée Visa* We Financial<sup>&reg;</sup></span> et qu'ils entreront en vigueur le <span class="accent" style="font-weight: 700; color: #004E7D;">1er Aout 2025.</span></p>
                           </tr>
                         </table>
 
@@ -700,56 +720,61 @@
                         
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
-                            <td class="bodyList" style="padding: 24px 24px 16px 24px;">
+                            <td class="bodyList" style="padding: 24px 24px 16px 24px !important;">
                               <ol>
-                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0;"><span style="font-weight: 700; color: #004E7D;">Début des services de la Société d'assurance-dépôts du Canada (SADC).</span> La carte prépayée Visa We Financial est émise par la Compagnie de Fiducie Peoples aux termes d'une licence accordée par Visa. Les fonds versés sur la carte sont détenus par l'émetteur, à savoir la Compagnie de Fiducie Peoples, institution membre de la SADC, et sont admissibles à la protection offerte par la SADC. We Financial n'est pas une institution membre de la SADC. Les fonds versés sur la carte sont combinés aux dépôts admissibles détenus par la Compagnie de Fiducie Peoples et font l'objet d'une protection jusqu'à concurrence de 100,000,$ par catégorie assurée, par déposant. Pour en savoir plus sur l'assurance-dépôts de la SADC, veuillez consulter le site Web de la SADC : https://www.sadc.ca/.
+                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0;"><span class="accent" style="font-weight: 700; color: #004E7D;">Début des services de la Société d'assurance-dépôts du Canada (SADC).</span> La carte prépayée Visa We Financial<sup>&reg;</sup> est émise par la Compagnie de Fiducie Peoples aux termes d'une licence accordée par Visa. Les fonds versés sur la carte sont détenus par l'émetteur, à savoir la Compagnie de Fiducie Peoples, institution membre de la SADC, et sont admissibles à la protection offerte par la SADC. We Financial<sup>&reg;</sup> n'est pas une institution membre de la SADC. Les fonds versés sur la carte sont combinés aux dépôts admissibles détenus par la Compagnie de Fiducie Peoples et font l'objet d'une protection jusqu'à concurrence de 100,000,$ par catégorie assurée, par déposant. Pour en savoir plus sur l'assurance-dépôts de la SADC, veuillez consulter le site Web de la SADC : <a class="link_accent" href="https://www.sadc.ca/" target="_blank">https://www.sadc.ca/</a>.
                                 </li>
-                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0; margin: 0;"><span style="font-weight: 700; color: #004E7D;">Changes to the Exception Limit.</span><br />
+
+                                <li class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; padding: 0; margin: 0;"><span class="accent" style="font-weight: 700; color: #004E7D;">Modification de la limite d'exception.</span><br />
                                   <table class="exceptionLimit" style="background-color: rgba(0, 174, 239, 40%); border: 1px solid #004E7D;">
                                     <tr>
-                                      <th>Limits that are changing:</th>
-                                      <th class="exceptionAmount">Current Exception Limit</th>
-                                      <th class="exceptionAmount">New Exception Limit*</th>
+                                      <th>Limites modifiées</th>
+                                      <th class="exceptionAmount">Limite d'exception actuells</th>
+                                      <th class="exceptionAmount">Nouvelle limite d'exception*</th>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Card Account Balance</td>
-                                      <td class="exceptionAmount">$100,000.00</td>
-                                      <td class="exceptionAmount">$200,000.00</td>
+                                      <td>Solde maximal du compte de carte</td>
+                                      <td class="exceptionAmount">100,000.00$</td>
+                                      <td class="exceptionAmount">200,000.00$</td>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Total Daily Load to all Card(s) - Cheque</td>
-                                      <td class="exceptionAmount">$100,000.00</td>
-                                      <td class="exceptionAmount">$200,000.00</td>
+                                      <td>Montant de chargement quotidien global maximal de la carte ou des cartes Par chéque</td>
+                                      <td class="exceptionAmount">100,000.00$</td>
+                                      <td class="exceptionAmount">200,000.00$</td>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Total Load Amounts for all Cards per Day</td>
-                                      <td class="exceptionAmount">$100,000.00</td>
-                                      <td class="exceptionAmount">$200,000.00</td>
+                                      <td>Montant global maximal de chargement de toutes les cartes par jour</td>
+                                      <td class="exceptionAmount">100,000.00$</td>
+                                      <td class="exceptionAmount">200,000.00$</td>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Total Load Amounts for all Cards every 7 Days</td>
-                                      <td class="exceptionAmount">$100,000.00</td>
-                                      <td class="exceptionAmount">$200,000.00</td>
+                                      <td>Montant global maximal de chargement de toutes les cartes pour chaque tranche de sept jours</td>
+                                      <td class="exceptionAmount">100,000.00$</td>
+                                      <td class="exceptionAmount">200,000.00$</td>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Daily Spend Amount for all Cards at Point-of-Sale</td>
-                                      <td class="exceptionAmount">$20,000.00</td>
-                                      <td class="exceptionAmount">$25,000.00</td>
+                                      <td>Montant maximal des achats quotidiens effectués à un point de vente pour toutes les Cartes</td>
+                                      <td class="exceptionAmount">20,000.00$</td>
+                                      <td class="exceptionAmount">25,000.00$</td>
                                     </tr>
                                     <tr>
-                                      <td>Maximum Daily Combined Spend and Cash Withdrawal Amount for all Cards</td>
+                                      <td>Montant maximal global des operations d’achat et de retrait quotidiennes pour toutes les Cartes</td>
                                       <td class="exceptionAmount">$22,500.00</td>
                                       <td class="exceptionAmount">$27,500.00</td>
                                     </tr>
                                   </table>
                                 </li>
+                                                       <tr>
+                            <td style="text-align: left; padding: 0 28px 0 60px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;"><sup>*</sup>Nous nous réservons le droit d'autoriser ces limites dans certaines circonstances, au cas par cas, après validation par We Financial de la provenance des fonds déposés qui dépassent la limite standard. Des conditions supplémentaires pourraient s'appliquer.</span></p>
+                          </tr>
                               </ol>
                             </td>
                           </tr>
-                          <tr>
+                          <!-- <tr>
                             <td style="text-align: left; padding: 0 28px 0 60px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;"><sup>*</sup>We reserve the right to permit these limits in limited circumstances and on a case by case basis upon validation by We Financial of the source of deposit funds that are in excess of the standard limit. Additional conditions may apply.</span></p>
-                          </tr>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;"><sup>*</sup>Nous nous réservons le droit d'autoriser ces limites dans certaines circonstances, au cas par cas, après validation par We Financial de la provenance des fonds déposés qui dépassent la limite standard. Des conditions supplémentaires pourraient s'appliquer.</span></p>
+                          </tr> -->
                           
                         </table>
 
@@ -784,13 +809,11 @@
                         <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td style="text-align: left; padding: 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">Visit Terms & Conditions to find the full cardholder agreement and Frequently Asked Questions for details after August 1, 2025. If you have any further questions, please contact us at 1-855-887-3946.</p>
-                              <p>There is no action needed from you. Your continued use of your card, after the changes come into effect will be taken as your acceptance of these changes.</p>
-                              <p>If you do not agree, you may rescind this agreement without cost, penalty or cancellation indemnity. If you choose to rescind this agreement, the Cancellation section of your Cardholder Agreement will apply. Call us at 1-855-887-3946 to initiate your cancellation no later than 30 days after the Amendment takes effect.</p>
-                              <p>Sincerely,<br />
-                                We Financial Visa Prepaid</p>
-                              <p class="footnote" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;">This card is issued by Peoples Trust Company pursuant to licence by Visa Int.<br />
-                              <sup>*</sup>Visa Int./Peoples Trust Company, Licensed User.</p>
+                              <p class="text" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 500; color: #2d2d2d; margin: 0 !important; padding: 0;">Visitez <a class="link_accent" href="https://ca.visaprepaidprocessing.com/content/PRC965/_Docs/Program.Terms.MainContent.fr-ca.pdf" target="_blank">Conditions Générales</a> pour consulter la version intégrale du Contrat du titulaire de carte et la <a class="link_accent" href="https://ca.visaprepaidprocessing.com/WeFinancial/Program/FAQ" target="_blank">foire aux questions</a> pour obtenir des précisions après le 1er Aout 2025. Si vous avez d'autres questions, veuillez communiquer avec nous au <a class="link_accent" rel="noopener" target="_blank" href="tel:1-855-887-3946">1-855-887-3946</a>. </p>
+                              <p>Vous n'avez aucune mesure à prendre. Si vous continuez d'utiliser votre carte après la date de prise d'effet des modifications, une telle utilisation sera réputée constituer votre acceptation de ces modifications.</p>
+                              <p>Si vous n'y consentez pas, vous pouvez résoudre le contrat sans frais, pénalité, ni indemnité de résolution. Si vous choisissez de résoudre le contrat, la rubrique Annulation du contrat s'appliquera. Appelez-nous au <a class="link_accent" rel="noopener" target="_blank" href="tel:1-855-887-3946">1-855-887-3946</a> pour demander une annulation au plus tard 30 jours après la prise d'effet de la modification.</p>
+                              <p>La Carte a été émise par la Compagnie de Fiducie Peoples conformément à une licence de Visa International Incorporated.</p>
+                              <p class="footnote" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.4; font-weight: 500; font-style: italic; color: #2d2d2d; margin: 0 !important; padding: 0;">Visa Int./La Compagnie de Fiducie Peoples, utilisateur sous licence.</p>
                           </tr>
                         </table>
 
@@ -819,7 +842,7 @@
               <tr>
                 <td style="text-align: center; padding: 0 20px;">
                   <a href="https://www.northmart.ca/" target="_blank">
-                    <h2 class="northmartLink" style="font-family: Helvetica, Arial, sans-serif; font-size: 42px; font-weight: 700; line-height: 1; text-decoration: none; color: #004E7D; display: inline-block;">northernstores.ca</h2>
+                    <h2 class="northmartLink" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 700; line-height: 1; text-decoration: none; color: #004E7D; display: inline-block;">northernstores.ca</h2>
                   </a>
                 </td>
               </tr>
@@ -836,15 +859,15 @@
         
         
         <tr>
-          <td>
+          <td style="padding: 0;">
 
             <!--[if mso]>
               <table width="600" align="center" style="border-spacing: 0;" role="presentation">
                 <tr>
-                  <td width="600" valign="top" style="padding: 0;;"
+                  <td width="600" valign="top" style="padding: 0;"
             <![endif]-->
 
-            <table class="footer" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0;"  role="presentation">
+            <table class="footer" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; background-color: #004e7d; color: #fafafa;"  role="presentation">
 
               <tr>
                 <td style="padding: 0;">
@@ -852,19 +875,19 @@
                   <!--[if mso]>
                     <table width="600" align="center" style="border-spacing: 0;" role="presentation">
                       <tr>
-                        <td width="600" valign="top" style="padding: 0;;"
+                        <td width="600" valign="top" style="padding: 0;"
                   <![endif]-->
 
-                  <table width="100%" style="border-spacing: 0; background-color: #004E7D;" role="presentation">
+                  <table width="100%" style="border-spacing: 0; background-color: #004E7D; color: #fafafa;" role="presentation">
 
                     <tr>
                       <td align="center" style="text-align: center; padding: 35px 0 15px 0;">
       
-                        <a class="footerMenu" href="https://www.northmart.ca/our-stores/locator" target="_blank">Store Locator</a>
+                        <a class="footerMenu" href="https://www.northmart.ca/our-stores/locator" target="_blank" style="color: #fafafa;">Store Locator</a>
       
-                        <a class="footerMenu footerLink" href="https://www.northmart.ca/community-support" target="_blank">Community Support</a>
+                        <a class="footerMenu footerLink" href="https://www.northmart.ca/community-support" target="_blank" style="color: #fafafa;">Community Support</a>
       
-                        <a class="footerMenu" href="https://www.northmart.ca/flyers" target="_blank">Local Flyers</a>
+                        <a class="footerMenu" href="https://www.northmart.ca/flyers" target="_blank" style="color: #fafafa;">Local Flyers</a>
       
                       </td>
                     </tr>
@@ -872,8 +895,8 @@
                   </table>
 
                   <!--[if mso]>
-                    </td>
-                    </tr>
+                        </td>
+                      </tr>
                     </table>
                   <![endif]-->
 
@@ -913,7 +936,7 @@
                   <!--[if mso]>
                     <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse;" role="presentation">
                       <tr>
-                        <td width="600" valign="top" style="padding: 0;;"
+                        <td width="600" valign="top" style="padding: 0;"
                   <![endif]-->
 
                   <table width="60%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse; margin-bottom: 30px;" role="presentation">
@@ -921,19 +944,19 @@
                       <td align="center" style="text-align: center;">
                         <a style="padding: 0;" href="https://www.facebook.com/NorthernStores" target="_blank"><img src="img/social_fb-rev_120x120.png" alt="Facebook" title="Facebook" width="35" border="0"></a>
                         <a style="text-decoration: none; padding: 0; margin: 0;" href="https://www.facebook.com/NorthernStores" target="_blank">
-                          <p style="font-size: 12px; font-weight: 500; margin: 0;">Facebook</p>
+                          <p class="footerSocial" style="font-size: 12px; font-weight: 500; margin: 0;">Facebook</p>
                         </a>
                       </td>
                       <td align="center" style="text-align: center;">
                         <a style="padding: 0;" href="https://www.instagram.com/northern_northmart/" target="_blank"><img src="img/social_insta-rev_120x120.png" alt="Instagram" title="Instagram" width="35" border="0"></a>
                         <a style="text-decoration: none; padding: 0;" href="https://www.instagram.com/northern_northmart/" target="_blank">
-                          <p style="font-size: 12px; font-weight: 500; margin: 0;">Instagram</p>
+                          <p class="footerSocial" style="font-size: 12px; font-weight: 500; margin: 0;">Instagram</p>
                         </a>
                       </td>
                       <td align="center" style="text-align: center;">
                         <a style="padding: 00;" href="https://www.youtube.com/@TheNorthWestCompany" target="_blank"><img src="img/social_yt-rev_120x120.png" alt="YouTube" title="YouTube"  width="35" border="0"></a>
                         <a style="text-decoration: none; padding: 0;" href="https://www.instagram.com/northern_northmart/" target="_blank">
-                          <p style="font-size: 12px; font-weight: 500; margin: 0;">YouTube</p>
+                          <p class="footerSocial" style="font-size: 12px; font-weight: 500; margin: 0;">YouTube</p>
                         </a>
                       </td>
                     </tr>
@@ -952,7 +975,7 @@
                 <td align="center" style="text-align: center; padding: 20px 0 30px 0;">
 
                     <a href="https://www.northmart.ca/" target="_blank">
-                      <img src="img/northernNorthMart-rev_575x90.png" alt="Northern/NorthMart logo" title="Northern/NorthMart logo" width="288" border="0" style="width: 100%; max-width: 300px;">
+                      <img src="img/weFinancial_180x100.png" alt="Northern/NorthMart logo" title="Northern/NorthMart logo" width="288" border="0" style="width: 100%; max-width: 180px;">
                     </a>
 
                 </td>
@@ -961,7 +984,7 @@
               <tr>
                 <td style="padding: 0 20px 0 20px;">
 
-                    <p style="font-size: 14px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center;">You have received this email because you are a valued Northern/NorthMart customer. If you no longer wish to receive these infrequent emails, please <a style="text-decoration: underline !important;" href="http://ct.e.northmart.ca/extended/page/ahnmdffo/##unsubscribecode##/">unsubscribe.</a></p>
+                    <p style="font-size: 14px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center;">You have received this email because you are a valued We Financial customer. If you no longer wish to receive these infrequent emails, please <a style="text-decoration: underline !important; color: #fafafa;" href="http://ct.e.northmart.ca/extended/page/ahnmdffo/##unsubscribecode##/">unsubscribe.</a></p>
 
                 </td>
               </tr>
@@ -979,13 +1002,13 @@
               <tr>
                 <td style="padding: 0 20px 0 20px;">
 
-                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #000000; margin-bottom: 20px; text-align: center; padding: 20px 20px 0 20px;">
-                      The North West Company<br />
-                      77 Main Street, Winnipeg, Manitoba, Canada R3C 1A3<br />
-                      <a href="https://www.northernstores.ca.ca/" target="_blank">
-                        northernstores.ca
-                      </a>
-                    </p>
+                      <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center; padding: 20px 20px 0 20px;">
+                        The North West Company<br />
+                        77 Main Street, Winnipeg, Manitoba, Canada R3C 1A3<br />
+                        <a href="https://www.northernstores.ca.ca/" target="_blank" style="color: #fafafa;">
+                          northernstores.ca
+                        </a>
+                      </p>
 
                 </td>
               </tr>
